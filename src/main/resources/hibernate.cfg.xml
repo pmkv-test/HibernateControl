@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.url">jdbc:postgresql://192.168.1.46:5432/postgres</property> <!-- BD Mane jdbc:postgresql://95.163.235.34:5432/timetable-->
+        <property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+        <property name="connection.username">postgres</property> <!-- DB User -->
+        <property name="connection.password">docker</property> <!-- DB Password -->
+
+       <property name="dialect">org.hibernate.dialect.PostgreSQL10Dialect</property> <!-- DB Dialect -->
+        <property name="hbm2ddl.auto">create</property> <!-- create / create-drop / update -->
+
+        <property name="show_sql">false</property> <!-- Show SQL in console -->
+        <property name="format_sql">false</property> <!-- Show SQL formatted -->
+
+    </session-factory>
+</hibernate-configuration>
